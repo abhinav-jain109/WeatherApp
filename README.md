@@ -17,6 +17,8 @@ This is a simple application that requests its data from [OpenWeather](https://o
 Source code can be downloaded from[Git hub location](https://github.com/abhinav-jain09/coding-dojo-spring-boot.git)
 
 ###In the nutshell all you need just one commands from project directory
+
+1. Mac or Unix user
  sh startapp.sh args
  -arg 
    
@@ -27,7 +29,16 @@ Source code can be downloaded from[Git hub location](https://github.com/abhinav-
      
  Example sh startapp.sh local
  
-     
+2. Windows user
+    startapp.bat args
+    -arg 
+       
+         --local
+         --test
+         --acc
+         --prod
+  
+  Example- startapp.bat local
 
 Or if the above command does not work for any reason you can run the following two commands 
 1. mvn clean install -Denv=docker

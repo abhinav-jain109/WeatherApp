@@ -1,2 +1,4 @@
-mvn clean install -Denv=docker
-denv=\"%1\" docker-compose up
+@echo off
+mvn clean install -Denv=docker & ^
+set denv=%1 & ^
+docker-compose up
