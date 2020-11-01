@@ -36,6 +36,7 @@ public class ControllerIntegrationTest extends BaseTest {
         try {
             ResponseEntity<Weather> forEntity = restTemplate.getForEntity(localhost + localServerPort + context + "nocity", Weather.class);
 
+
         } catch (HttpStatusCodeException exception) {
 
             throw new NotValidInput(exception.getMessage());

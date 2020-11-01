@@ -22,7 +22,7 @@ public class WeatherDataProcessing {
 
     private final WeatherRepository weatherRepository;
     private final RestTemplate restTemplate;
-    Logger logger = LoggerFactory.getLogger(WeatherDataProcessing.class);
+   private final static Logger logger = LoggerFactory.getLogger(WeatherDataProcessing.class);
     @Value("${baseurl.external.api.call}")
     private String baseUrl;
     @Value("${api.id}")
